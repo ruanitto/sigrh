@@ -1,7 +1,11 @@
-zf:
-  build: .
-  dockerfile: Dockerfile
-  ports:
-   - "8080:80"
-  volumes:
-   - .:/var/www
+# For more information: https://github.com/julien-r44/adonis-sail
+version: '3'
+
+services:
+  zf:
+    build: .
+    # dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www
